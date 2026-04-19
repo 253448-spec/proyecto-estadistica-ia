@@ -231,8 +231,8 @@ api_key = st.text_input("API Key de Google Gemini", type="password")
 
 if api_key:
     genai.configure(api_key=api_key)
-    modelo_ia = genai.GenerativeModel('gemini-1.5-flash')
-    
+    modelo_ia = genai.GenerativeModel('gemini-2.5-flash')
+
     prompt = f"""
 Se realizó una prueba Z con los siguientes parámetros:
 media muestral = {media_muestral:.2f}, media hipotética = {mu0}, n = {n_muestra}, sigma = {sigma}, alpha = {alpha}, tipo de prueba = {cola}.
